@@ -4,19 +4,43 @@
 <html lang="ko">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+  /* 화면 폭이 768px 이하(모바일)일 때 적용 */
+  @media (max-width: 768px) {
+    .hero-bg {
+      background-position: center 0 !important;
+    }
+    .hero-header-cell {
+      padding: 32px 0 28px 0 !important;
+    }
+    .inner-padding {
+      padding-left: 16px !important;
+      padding-right: 16px !important;
+    }
+    .main-title {
+      font-size: 32px !important;
+    }
+    .sub-title {
+      font-size: 14px !important;
+    }
+  }
+</style>
+
 </head>
 
 <body style="margin:0; padding:0; background:#f3f4f6; font-family:Arial, sans-serif;">
 
 <!-- 헤더 -->
 
-<table width="100%" cellpadding="0" cellspacing="0" border="0"
+<table class="hero-bg" width="100%" cellpadding="0" cellspacing="0" border="0"
        style="background-image:url('https://static.wixstatic.com/media/b749e1_60701dc82eb542149d95637ce7a34802~mv2_d_5568_3712_s_4_2.jpg/v1/fill/w_1553,h_1071,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b749e1_60701dc82eb542149d95637ce7a34802~mv2_d_5568_3712_s_4_2.jpg');
               background-size:cover;
               background-position:center -60px;
               background-repeat:no-repeat;">
   <tr>
-    <td align="center"
+    <td align="center" class="hero-header-cell"
         style="padding:40px 0;
                background: linear-gradient(to bottom right,
                            rgba(0,0,40,0.55),
@@ -27,7 +51,7 @@
                     color:#ffffff; margin:0 auto;">
 
         <tr>
-          <td style="padding:16px 24px 8px 24px;">
+          <td class="inner-padding" style="padding:16px 24px 8px 24px;">
             <table width="100%">
               <tr>
                 <td align="left">
@@ -42,15 +66,16 @@
         </tr>
 
         <tr>
-          <td align="center"
+          <td align="center" class="inner-padding"
               style="padding:30px 24px 12px 24px;
-                     font-size:40px; font-weight:600; color:#ffffff;">
-            InSpace Weekly
+                     font-size:40px; font-weight:600; color:#ffffff;"
+              >
+            <div class="main-title">InSpace Weekly</div>
           </td>
         </tr>
 
         <tr>
-          <td align="center"
+          <td align="center" class="inner-padding sub-title"
               style="padding:0 24px 20px 24px;
                      font-size:15px; font-weight:300; opacity:0.85;">
             2025년 11월 20일 ~ 2025년 11월 26일
@@ -58,7 +83,7 @@
         </tr>
 
         <tr>
-          <td style="padding:8px 24px 40px 24px;">
+          <td class="inner-padding" style="padding:8px 24px 40px 24px;">
             <table width="100%">
               <tr>
                 <td></td>
@@ -88,7 +113,7 @@
       <table cellpadding="0" cellspacing="0" border="0"
              style="max-width:700px; width:100%; margin:0 auto;">
         <tr>
-          <td style="padding:0 16px 0 16px;">
+          <td class="inner-padding" style="padding:0 16px 0 16px;">
             
 <table width="100%" cellpadding="0" cellspacing="0" border="0"
        style="margin-bottom:36px;">
