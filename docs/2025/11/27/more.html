@@ -5,18 +5,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>InSpace Weekly - 추가 기사 모아보기</title>
+
+<style>
+  /* 화면 폭이 768px 이하(대부분 모바일)일 때만 적용 */
+  @media (max-width: 768px) {
+    .hero-bg {
+      /* 데스크톱에서는 center -60px,
+         모바일에서는 더 아래 쪽을 보여주도록 0으로 내림 */
+      background-position: center 0 !important;
+    }
+    .hero-header-cell {
+      /* 아래쪽 그라데이션만 있는 영역을 줄이기 위해 패딩 감소 */
+      padding-bottom: 16px !important;
+    }
+  }
+</style>
+
 </head>
 
 <body style="margin:0; padding:0; background:#f3f4f6; font-family:Arial, sans-serif;">
 
 <!-- 헤더 (메일과 유사한 스타일) -->
-<table width="100%" cellpadding="0" cellspacing="0" border="0"
+<table class="hero-bg" width="100%" cellpadding="0" cellspacing="0" border="0"
        style="background-image:url('https://static.wixstatic.com/media/b749e1_60701dc82eb542149d95637ce7a34802~mv2_d_5568_3712_s_4_2.jpg/v1/fill/w_1553,h_1071,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b749e1_60701dc82eb542149d95637ce7a34802~mv2_d_5568_3712_s_4_2.jpg');
               background-size:cover;
               background-position:center -60px;
               background-repeat:no-repeat;">
   <tr>
-    <td align="center"
+    <td align="center" class="hero-header-cell"
         style="padding:40px 0;
                background: linear-gradient(to bottom right,
                            rgba(0,0,40,0.55),
