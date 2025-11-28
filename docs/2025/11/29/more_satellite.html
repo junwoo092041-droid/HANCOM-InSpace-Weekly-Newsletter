@@ -2,53 +2,306 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>위성 영상 - 추가 기사 - 추가 기사</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- iOS Mail 다크모드 강제 색상 변경 방지 -->
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+
+<title>위성 영상 - 추가 기사</title>
+
+<style>
+  /* 모바일 최적화 */
+  @media (max-width: 768px) {
+    .hero-bg {
+      background-position:center 0 !important;
+    }
+    .hero-header-cell {
+      padding:32px 0 28px 0 !important;
+    }
+  }
+
+  /* 푸터를 항상 아래로 밀어주는 레이아웃 */
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background:#f3f4f6;
+    font-family:Arial, sans-serif;
+  }
+
+  .content-wrapper {
+    flex: 1;
+  }
+</style>
+
 </head>
 
-<body style="font-family:Arial, sans-serif; max-width:700px; margin:0 auto; padding:24px;">
+<body>
 
-    <h2 style="font-size:26px; margin-bottom:12px; border-bottom:2px solid #41a4ff; padding-bottom:8px;">
-        위성 영상 - 추가 기사 - 추가 기사
-    </h2>
+  <!-- 헤더 (메일과 유사한 스타일) -->
+  <table class="hero-bg" width="100%" cellpadding="0" cellspacing="0" border="0"
+       style="background-image:url('https://static.wixstatic.com/media/b749e1_60701dc82eb542149d95637ce7a34802~mv2_d_5568_3712_s_4_2.jpg/v1/fill/w_1553,h_1071,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/b749e1_60701dc82eb542149d95637ce7a34802~mv2_d_5568_3712_s_4_2.jpg');
+              background-size:cover;
+              background-position:center -60px;
+              background-repeat:no-repeat;">
+    <tr>
+      <td align="center" class="hero-header-cell"
+          bgcolor="#000000"
+          style="padding:40px 0 20px 0;
+                 background: linear-gradient(to bottom right,
+                             rgba(0,0,40,0.55),
+                             rgba(0,0,0,0.55));
+                 color:#ffffff; -webkit-text-fill-color:#ffffff;">
 
-    <div style="font-size:14px; color:#666; margin-bottom:18px;">
-        업데이트: 2025.11.29<br>
-        기간: 2025년 11월 20일 ~ 2025년 11월 28일
-    </div>
+        <table cellpadding="0" cellspacing="0" border="0"
+               style="max-width:700px; width:100%;
+                      color:#ffffff; margin:0 auto;">
 
-    
-        <div style="border-bottom:1px solid #ddd; padding:12px 0; display:flex; gap:14px; align-items:flex-start;">
-            <img src="https://www.spxdaily.com/images-hg/spire-global-satellite-earth-clouds-marker-hg.jpg" style="width:120px; height:80px; object-fit:cover; border-radius:6px;">
-            <div style="flex:1;">
-                <a href="https://www.spacedaily.com/reports/Hyperspectral_Microwave_Sounder_Set_for_Launch_Following_Final_Testing_Phase_999.html" target="_blank" 
-                    style="font-size:17px; font-weight:600; color:#222; text-decoration:none;">
-                    제목 없음
+          <tr>
+            <td style="padding:16px 24px 8px 24px;">
+              <table width="100%">
+                <tr>
+                  <td align="left">
+                    <img src="https://static.wixstatic.com/media/0c4f16_c8132c52e3ef485286a1f0ec457a5cdb~mv2.png/v1/fill/w_111,h_44,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logotype_vert_rgb_v2__w__w500.png%201x,%20https://static.wixstatic.com/media/0c4f16_c8132c52e3ef485286a1f0ec457a5cdb~mv2.png/v1/fill/w_222,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logotype_vert_rgb_v2__w__w500.png%202x" style="max-width:110px; display:block;">
+                  </td>
+                  <td align="right"
+                      style="text-transform:uppercase; font-size:13px;
+                             color:#ffffff; -webkit-text-fill-color:#ffffff;">
+                    WWW.INSPACE.CO.KR
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"
+                style="padding:30px 24px 12px 24px;
+                       font-size:28px; font-weight:600;
+                       color:#ffffff; -webkit-text-fill-color:#ffffff;">
+              위성 영상 - 추가 기사
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"
+                style="padding:0 24px 20px 24px;
+                       font-size:14px; font-weight:300; opacity:0.9; line-height:1.5;
+                       color:#ffffff; -webkit-text-fill-color:#ffffff;">
+              2025년 11월 21일 ~ 2025년 11월 27일<br>
+              1주차 뉴스레터
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+
+  <div class="content-wrapper">
+  <!-- 본문 -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="padding:24px 0 32px 0;">
+    <tr>
+      <td align="center">
+        <table cellpadding="0" cellspacing="0" border="0"
+              style="max-width:700px; width:100%; margin:0 auto;">
+          <tr>
+            <td style="padding:0 16px 0 16px;">
+
+              <!-- 메인 뉴스레터로 돌아가기 버튼 (카드 위 왼쪽 정렬) -->
+              <div style="padding-bottom:20px; text-align:left;">
+                <a href="https://hancom-inspace.github.io/Weekly-Newsletter/2025/11/29/index.html"
+                  style="display:inline-block;
+                          font-size:13px;
+                          padding:6px 12px;
+                          border-radius:999px;
+                          background:#111827;
+                          color:#ffffff;
+                          text-decoration:none;">
+                  ← 메인 뉴스레터로 돌아가기
                 </a>
-                <div style="font-size:14px; color:#555; margin-top:4px;">
-                    Spire Global은 하이퍼스펙트럴 마이크로파 사운더(HyMS) 탑재체에 대한 환경 테스트, 보정, 비행 적격성 평가를 완료했다. 이 탑재체는 Spire의 16U 위성에 통합되어 밴덴버그로 발송되었으며, 위성 영상 분야에서 하이퍼스펙트럴 데이터 수집 및 분석에 중요한 역할을 할 것으로 기대된다.
-                </div>
-            </div>
-        </div>
-        
-        <div style="border-bottom:1px solid #ddd; padding:12px 0; display:flex; gap:14px; align-items:flex-start;">
-            <img src="https://i.insider.com/69246257e1a9cbb014ded0d3?width=1200&format=jpeg" style="width:120px; height:80px; object-fit:cover; border-radius:6px;">
-            <div style="flex:1;">
-                <a href="https://www.businessinsider.com/ukraine-delta-battlefield-tool-slashed-strike-times-on-russian-targets-2025-11" target="_blank" 
-                    style="font-size:17px; font-weight:600; color:#222; text-decoration:none;">
-                    제목 없음
-                </a>
-                <div style="font-size:14px; color:#555; margin-top:4px;">
-                    우크라이나의 Delta 전장 관리 시스템은 목표물 탐지부터 타격까지의 시간을 크게 단축시켜 전투 효율성과 의사결정 속도를 크게 향상시켰다. 이 시스템은 위성 영상과 실시간 데이터를 활용해 신속한 대응을 가능하게 하며, 전장 상황 인지와 타격 정확도를 높여 전투력을 극대화하고 있다.
-                </div>
-            </div>
-        </div>
-        
+              </div>
 
-    <div style="text-align:center; margin-top:40px; color:#888; font-size:13px;">
-        © Hancom InSpace. All Rights Reserved.
-    </div>
+              
+<!-- 토픽별 추가 기사 박스 -->
+<table width="100%" cellpadding="0" cellspacing="0" border="0"
+       style="margin-bottom:28px;">
+  <tr>
+    <td align="center">
+      <table cellpadding="0" cellspacing="0" border="0"
+             style="width:100%;
+                    max-width:700px;
+                    background:#ffffff;
+                    border:1px solid #e5e7eb;
+                    border-radius:12px;
+                    padding:20px;
+                    box-sizing:border-box;">
+        <tr>
+          <td>
+            <div style="font-size:24px; font-weight:700; color:#111827;
+                        margin-bottom:28px;">
+              🛰️ 위성 영상 / SAR·광학·하이퍼스펙트럴 이미지 분석
+            </div>
+            
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+  
+      <tr>
+        <td style="padding:8px 0; border-bottom:1px solid #e5e7eb;">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <!-- 썸네일 -->
+              <td valign="top" width="96" style="padding-right:8px;">
+                <a href="https://www.spacedaily.com/reports/Hyperspectral_Microwave_Sounder_Set_for_Launch_Following_Final_Testing_Phase_999.html" target="_blank" style="text-decoration:none;">
+                  <img src="https://www.spxdaily.com/images-hg/spire-global-satellite-earth-clouds-marker-hg.jpg" width="80" height="80"
+                       style="display:block; border-radius:10px; object-fit:cover;"
+                       onerror="this.onerror=null; this.src='https://e0.pxfuel.com/wallpapers/597/629/desktop-wallpaper-fun-funny-funny-funny-space.jpg';">
+                </a>
+              </td>
+
+              <!-- 제목/부제목/날짜 -->
+              <td valign="top">
+                <div style="font-size:14px; line-height:1.5; margin-bottom:2px;">
+                  <a href="https://www.spacedaily.com/reports/Hyperspectral_Microwave_Sounder_Set_for_Launch_Following_Final_Testing_Phase_999.html" target="_blank"
+                     style="color:#111827; text-decoration:none;">
+                    최종 시험 단계 완료 후 발사 예정인 하이퍼스펙트럴 마이크로파 음향기
+                  </a>
+                </div>
+                
+        <div style="font-size:12px; color:#6b7280; margin-top:2px; line-height:1.4;">
+          Hyperspectral Microwave Sounder Set for Launch Following Final Testing Phase
+        </div>
+                <div style="font-size:11px; color:#9ca3af; margin-top:2px;">
+                  2025-11-25
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:8px 0; border-bottom:1px solid #e5e7eb;">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <!-- 썸네일 -->
+              <td valign="top" width="96" style="padding-right:8px;">
+                <a href="https://www.businessinsider.com/ukraine-delta-battlefield-tool-slashed-strike-times-on-russian-targets-2025-11" target="_blank" style="text-decoration:none;">
+                  <img src="https://i.insider.com/69246257e1a9cbb014ded0d3?width=1200&amp;format=jpeg" width="80" height="80"
+                       style="display:block; border-radius:10px; object-fit:cover;"
+                       onerror="this.onerror=null; this.src='https://e0.pxfuel.com/wallpapers/597/629/desktop-wallpaper-fun-funny-funny-funny-space.jpg';">
+                </a>
+              </td>
+
+              <!-- 제목/부제목/날짜 -->
+              <td valign="top">
+                <div style="font-size:14px; line-height:1.5; margin-bottom:2px;">
+                  <a href="https://www.businessinsider.com/ukraine-delta-battlefield-tool-slashed-strike-times-on-russian-targets-2025-11" target="_blank"
+                     style="color:#111827; text-decoration:none;">
+                    우크라이나의 디지털 전쟁 도구, 러시아 목표물 타격 시간 수일에서 수분으로 단축
+                  </a>
+                </div>
+                
+        <div style="font-size:12px; color:#6b7280; margin-top:2px; line-height:1.4;">
+          Ukraine&#x27;s digital war tool cut the time between finding and striking Russian targets from days to minutes
+        </div>
+                <div style="font-size:11px; color:#9ca3af; margin-top:2px;">
+                  2025-11-24
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr>
+        <td style="padding:8px 0; border-bottom:1px solid #e5e7eb;">
+          <table width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <!-- 썸네일 -->
+              <td valign="top" width="96" style="padding-right:8px;">
+                <a href="https://www.khan.co.kr/article/202511230800001" target="_blank" style="text-decoration:none;">
+                  <img src="https://img.khan.co.kr/news/2025/11/23/news-p.v1.20251121.01d180f20fad4a0b8bb18bedb772b09f_P1.gif" width="80" height="80"
+                       style="display:block; border-radius:10px; object-fit:cover;"
+                       onerror="this.onerror=null; this.src='https://e0.pxfuel.com/wallpapers/597/629/desktop-wallpaper-fun-funny-funny-funny-space.jpg';">
+                </a>
+              </td>
+
+              <!-- 제목/부제목/날짜 -->
+              <td valign="top">
+                <div style="font-size:14px; line-height:1.5; margin-bottom:2px;">
+                  <a href="https://www.khan.co.kr/article/202511230800001" target="_blank"
+                     style="color:#111827; text-decoration:none;">
+                    [영상]마침내 이번주 발사…누리호가 넘어야 할 3가지 고비는 ‘이것’
+                  </a>
+                </div>
+                
+        <div style="font-size:12px; color:#6b7280; margin-top:2px; line-height:1.4;">
+          [영상]마침내 이번주 발사…누리호가 넘어야 할 3가지 고비는 ‘이것’
+        </div>
+                <div style="font-size:11px; color:#9ca3af; margin-top:2px;">
+                  2025-11-22
+                </div>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+</table>
+
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  </div> <!-- content-wrapper 끝 -->
+
+  <!-- 푸터 -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0"
+         style="background:#1e293b; padding:24px 0 32px 0;">
+    <tr>
+      <td align="center">
+        <table cellpadding="0" cellspacing="0" border="0"
+               style="max-width:700px; width:100%; margin:0 auto;">
+          <tr>
+            <td style="padding:12px 16px;
+                       font-size:12px;
+                       color:#e2e8f0;
+                       text-align:center;
+                       line-height:1.6;">
+
+              Hancom InSpace Weekly · 1주차<br>
+
+              <a href="https://www.inspace.co.kr" target="_blank"
+                 style="color:#cbd5e1; text-decoration:underline;">
+                WWW.INSPACE.CO.KR
+              </a>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
 
 </body>
 </html>
